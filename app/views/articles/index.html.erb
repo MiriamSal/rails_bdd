@@ -1,5 +1,13 @@
-<h1>List of articles</h1>
+<div>
+  <%= link_to "CraftAcademy Journal", root_path %><br>
+</div>
+
+<h1>CraftAcademy Journal</h1>
 <% @articles.each do |article| %>
   <p><%= article.title %></p>
   <p><%= article.content %></p>
 <% end %>
+
+<div>
+  <%= link_to "New Article", new_article_path, id: "new_article" %><br>
+</div>
