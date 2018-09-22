@@ -1,0 +1,17 @@
+<%= form_with model: ([@article, @article.comments.build]) do |f| %>
+<% # form_tag and form_for are soft deprecated and 
+# they will be replaced by form_with in the future
+#scope is an opition that we need in order to prefix the input field names
+#and is useful when you want to submit params grouped to a controller. %>
+<div>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+</div>
+
+<div>
+  <%= f.label :comment %>
+  <%= f.text_area :comment %>
+  <%= f.submit value: "Send comment" %>
+</div>
+
+<% end %>

@@ -1,4 +1,21 @@
-<% @articles.each do |article| %>
-  <p><%= article.title %></p>
-  <p><%= article.content %></p>
+<h1> 
+  <%= link_to "CraftAcademy Journal", root_path %><br>
+</h1>
+<div>
+  <%= link_to "Create Article", new_article_path, id: "new_article" %><br>
+</div>
+
+<p id="notice"><%= notice %> </p>
+
+<div>
+  <% @article.each do |article| %>
+  <p>Title: <%= link_to article.title, article %></p>
+  <p>Content: <%= article.content %></p>
 <% end %>
+</div>
+<%-# if you notice, since we are already looping inside all articles
+# we dont need the @sign in order to call title and content of the article, 
+# we use only "article.title" because we already set it as variable 
+
+#link_to basically we're giving the user the possibility to click the title and 
+#go to the actual page of the article, eg. localhost:3000/articles/3-%>

@@ -1,0 +1,23 @@
+<h1>Create an article</h1>
+
+<%= form_with url: articles_path, scope: :article  do |f| %>
+<% # form_tag and form_for are soft deprecated and 
+# they will be replaced by form_with in the future
+#scope is an opition that we need in order to prefix the input field names
+#and is useful when you want to submit params grouped to a controller. %>
+<div>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</div>
+
+<div>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+</div>
+
+<div>
+  <%= f.submit value: "Save articles" %>
+</div>
+
+<% end %>
+<p><%= link_to "Back", root_path %></p>
