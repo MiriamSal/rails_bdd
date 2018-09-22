@@ -1,7 +1,7 @@
 
-  Given("I am on article page") do
-    article = Article.find_by(:id)
-    expect(current_path).to eq article_path
+  Given("I am on {string} page") do |article_title|
+    title = Article.find_by(title: article_title)
+    expect(current_path).to eq article_path(title)
   end
   
   Then("I click on {string}") do |string|
