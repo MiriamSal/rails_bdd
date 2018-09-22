@@ -9,7 +9,9 @@ Background:
       | A breaking news item | Some really breaking action  |
 
 Scenario: User can comment on an article
-    Given I am on "A breaking news item" page
+    When I visit the site
+    When I click on "A breaking news item"
+    Then I should be on "A breaking news item" page
     And I fill in "Email" with "miriam@work.com"
     And I fill in "Comment" with "This is not correct!"
     And I click on "Send comment"
