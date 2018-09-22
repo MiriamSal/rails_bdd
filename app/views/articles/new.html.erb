@@ -1,10 +1,20 @@
-<h1>Write article</h1>
+<h1>Create an article</h1>
 
 <%= form_with url: articles_path, scope: :article  do |f| %>
+
+<div>
   <%= f.label :title %>
   <%= f.text_field :title %>
+</div>
+
+<div>
   <%= f.label :content %>
   <%= f.text_area :content %>
+</div>
+
+<div>
   <%= f.submit value: "Save Article" %>
+</div>
+
 <% end %>
 <p><%= link_to "Back", root_path %></p>
