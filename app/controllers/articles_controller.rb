@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
     redirect_to root_path, notice: "Article was successfully created."
     
     else
-      render 'new', flash[:error] = "Title can't be blank"  
+      render 'new'
     end
   end
 

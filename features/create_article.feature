@@ -5,12 +5,12 @@ Feature: Create articles
 
   Background:
     When I visit the site
-    When I click "Create New Article" link
+    When I click on "Create Article"
 
   Scenario: Successfully create an article [Happy Path]
     When I fill in "Title" with "Learning Rails 5"
     And I fill in "Content" with "Excited about learning a new framework"
-    And I click "Create Article" button
+    When I click on "Save articles" 
     Then I should be on index page
     And I should see "Article was successfully created."
     And I should see "Learning Rails 5"
@@ -18,5 +18,5 @@ Feature: Create articles
 
   Scenario: Publisher doesn't enter a title for the article [Sad Path]
     When I fill in "Content" with "Excited about learning a new framework"
-    And I click "Create Article" button
-    Then I should see "Title can't be blank"
+    When I click on "Save articles" 
+    Then I should be on create article page
