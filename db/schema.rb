@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 2018_09_22_095446) do
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "post_id"
     t.integer "article_id"
   end
 
