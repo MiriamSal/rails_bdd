@@ -1,5 +1,6 @@
 <h1>Show Articles</h1>
 <div>
+<%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "are you sure?"} %>
 <h4><%= @article.title %></h4>
 <h6><%= @article.content %></h6>
 </div>
