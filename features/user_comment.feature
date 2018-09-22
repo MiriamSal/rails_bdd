@@ -15,4 +15,4 @@ Scenario: User can comment on an article
     And I fill in "Email" with "miriam@work.com"
     And I fill in "Comment" with "This is not correct!"
     And I click on "Send comment"
-    Then I should be on article page with my comment
+    Then I should be on "A breaking news item" page with my comment
