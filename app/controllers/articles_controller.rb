@@ -7,9 +7,10 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-    redirect_to root_path
+    redirect_to root_path, notice: "Article was successfully created."
+    
     else
-      render 'new'    
+      render 'new', flash[:error] = "Title can't be blank"  
     end
   end
 

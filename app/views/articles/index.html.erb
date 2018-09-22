@@ -2,8 +2,10 @@
   <%= link_to "CraftAcademy Journal", root_path %><br>
 </h1>
 <div>
-  <%= link_to "Create New Article", new_article_path, id: "new_article" %><br>
+  <%= link_to "Create Article", new_article_path, id: "new_article" %><br>
 </div>
+
+<p id="notice"><%= notice %> </p>
 
 <div>
   <% @article.each do |article| %>
