@@ -1,6 +1,6 @@
 
-# **AUT challenge - Week 4
-On our 4th week at the bootcamp, we've been introduced to Ruby on Rails. We learned the structure, params, routes, migration, common helpers and CRUD controller actions.**
+## **AUT challenge - Week 4**
+On our 4th week at the bootcamp, we've been introduced to Ruby on Rails. We learned the structure, params, routes, migration, common helpers and CRUD controller actions.
 
 ````
 User stories
