@@ -1,5 +1,5 @@
 
-#**AUT challenge - Week 4
+# **AUT challenge - Week 4
 On our 4th week at the bootcamp, we've been introduced to Ruby on Rails. We learned the structure, params, routes, migration, common helpers and CRUD controller actions.**
 
 ````
@@ -25,5 +25,5 @@ rails s
 on a browser: localhost:3000
 
 Authors
-*Miriam Sallnäs
-*Rhoneil Gabriel
+Miriam Sallnäs
+Rhoneil Gabriel
